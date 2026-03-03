@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT ALTERN DIGITAL TECHNOLOGIES - IT Consulting & Software Agency</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        ::selection {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .tech-pattern {
+            background-image: radial-gradient(#333333 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        /* Custom stroke width for icons */
+        .lucide {
+            stroke-width: 1.5;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white font-sans antialiased selection:bg-white selection:text-black">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex flex-col">
+                <a href="#beranda" class="text-2xl font-bold tracking-tight text-white hover:text-gray-300 transition-colors">
+                    ALTERN DIGITAL
+                </a>
+                <span class="text-[10px] tracking-widest text-[#888888] font-medium mt-1">PT ALTERN DIGITAL TECHNOLOGIES</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                <a href="#beranda" class="text-[#AAAAAA] hover:text-white transition-colors">Beranda</a>
+                <a href="#layanan" class="text-[#AAAAAA] hover:text-white transition-colors">Layanan</a>
+                <a href="#produk" class="text-[#AAAAAA] hover:text-white transition-colors">Produk & Harga</a>
+                <a href="#tentang" class="text-[#AAAAAA] hover:text-white transition-colors">Tentang Kami</a>
+                <a href="#portofolio" class="text-[#AAAAAA] hover:text-white transition-colors">Portofolio</a>
+                <a href="#kontak" class="text-[#AAAAAA] hover:text-white transition-colors">Kontak</a>
+                <a href="#kontak" class="ml-4 border border-white text-white px-6 py-2.5 hover:bg-white hover:text-black transition-all duration-300">
+                    Mulai Proyek
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+                <i data-lucide="x" id="close-icon" class="w-6 h-6 hidden"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-black border-b border-[#222222] flex-col p-6 gap-4">
+            <a href="#beranda" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Beranda</a>
+            <a href="#layanan" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Layanan</a>
+            <a href="#produk" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Produk & Harga</a>
+            <a href="#tentang" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Tentang Kami</a>
+            <a href="#portofolio" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Portofolio</a>
+            <a href="#kontak" class="mobile-link text-lg text-[#AAAAAA] hover:text-white">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Abstract Tech Background -->
+        <div class="absolute inset-0 tech-pattern opacity-20 pointer-events-none"></div>
+        <div class="absolute inset-0 opacity-30 pointer-events-none flex items-center justify-center">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="max-w-5xl">
+                <path d="M100 200 L400 150 L700 300 L900 100" stroke="#444444" stroke-width="1" fill="none" />
+                <path d="M200 500 L500 400 L800 600" stroke="#444444" stroke-width="1" fill="none" />
+                <circle cx="100" cy="200" r="3" fill="#FFFFFF" />
+                <circle cx="400" cy="150" r="4" fill="#888888" />
+                <circle cx="700" cy="300" r="3" fill="#FFFFFF" />
+                <circle cx="900" cy="100" r="2" fill="#666666" />
+                <circle cx="200" cy="500" r="4" fill="#FFFFFF" />
+                <circle cx="500" cy="400" r="3" fill="#888888" />
+                <circle cx="800" cy="600" r="3" fill="#FFFFFF" />
+            </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8">
+                Solusi Software & Digital<br />yang Cepat & Profesional
+            </h1>
+            <p class="text-lg md:text-xl text-[#AAAAAA] font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Custom Software • Web & Platform Digital • Pemrograman Komputer<br />
+                <span class="text-[#666666] text-base mt-2 block">Jepara, Indonesia</span>
+            </p>
+            <a 
+                href="https://wa.me/6282331565165?text=Halo%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES%2C%20saya%20ingin%20konsultasi."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-3 bg-white text-black px-8 py-4 text-lg font-medium hover:bg-[#DDDDDD] transition-colors"
+            >
+                Konsultasi Gratis Sekarang
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-32 border-t border-[#1a1a1a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Layanan Kami</h2>
+                <div class="w-16 h-px bg-white"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 border border-[#222222] hover:border-[#666666] transition-colors group cursor-default bg-[#050505]">
+                    <div class="text-[#AAAAAA] group-hover:text-white transition-colors">
+                        <i data-lucide="globe" class="w-8 h-8 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Web Development</h3>
+                    <p class="text-[#888888] text-sm leading-relaxed font-light">
+                        Pembuatan website modern, responsif, dan SEO-friendly untuk identitas digital perusahaan Anda.
+                    </p>
+                </div>
+                <div class="p-8 border border-[#222222] hover:border-[#666666] transition-colors group cursor-default bg-[#050505]">
+                    <div class="text-[#AAAAAA] group-hover:text-white transition-colors">
+                        <i data-lucide="smartphone" class="w-8 h-8 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Mobile Apps</h3>
+                    <p class="text-[#888888] text-sm leading-relaxed font-light">
+                        Pengembangan aplikasi mobile native & cross-platform untuk ekosistem Android dan iOS.
+                    </p>
+                </div>
+                <div class="p-8 border border-[#222222] hover:border-[#666666] transition-colors group cursor-default bg-[#050505]">
+                    <div class="text-[#AAAAAA] group-hover:text-white transition-colors">
+                        <i data-lucide="code" class="w-8 h-8 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Custom Software</h3>
+                    <p class="text-[#888888] text-sm leading-relaxed font-light">
+                        Sistem perangkat lunak yang dirancang khusus untuk mengoptimalkan alur kerja bisnis spesifik.
+                    </p>
+                </div>
+                <div class="p-8 border border-[#222222] hover:border-[#666666] transition-colors group cursor-default bg-[#050505]">
+                    <div class="text-[#AAAAAA] group-hover:text-white transition-colors">
+                        <i data-lucide="database" class="w-8 h-8 mb-4"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Platform Digital</h3>
+                    <p class="text-[#888888] text-sm leading-relaxed font-light">
+                        Arsitektur sistem kompleks, portal web komersial, marketplace, dan integrasi API tingkat lanjut.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & Pricing Section -->
+    <section id="produk" class="py-32 border-t border-[#1a1a1a] bg-[#030303]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Produk & Harga</h2>
+                <p class="text-[#AAAAAA] max-w-2xl mx-auto font-light">Investasi transparan untuk transformasi digital bisnis Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Paket 1 -->
+                <div class="bg-white text-black p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.05)]">
+                    <div class="mb-8 flex-grow">
+                        <h3 class="text-lg font-bold mb-4 border-b border-[#EEEEEE] pb-4">Paket Website Profesional</h3>
+                        <div class="text-3xl font-bold tracking-tight mb-4">Rp 7.500.000</div>
+                        <p class="text-[#555555] text-sm leading-relaxed">Website company profile modern & responsif</p>
+                    </div>
+                    <a 
+                        href="https://wa.me/6282331565165?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Website%20Profesional%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-full flex items-center justify-center gap-2 bg-black text-white py-3.5 font-medium hover:bg-[#222222] transition-colors mt-auto"
+                    >
+                        Pesan via WhatsApp
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="bg-white text-black p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.05)]">
+                    <div class="mb-8 flex-grow">
+                        <h3 class="text-lg font-bold mb-4 border-b border-[#EEEEEE] pb-4">Paket Aplikasi Mobile</h3>
+                        <div class="text-3xl font-bold tracking-tight mb-4">Rp 18.000.000</div>
+                        <p class="text-[#555555] text-sm leading-relaxed">Aplikasi Android & iOS custom</p>
+                    </div>
+                    <a 
+                        href="https://wa.me/6282331565165?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Aplikasi%20Mobile%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-full flex items-center justify-center gap-2 bg-black text-white py-3.5 font-medium hover:bg-[#222222] transition-colors mt-auto"
+                    >
+                        Pesan via WhatsApp
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-white text-black p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.05)]">
+                    <div class="mb-8 flex-grow">
+                        <h3 class="text-lg font-bold mb-4 border-b border-[#EEEEEE] pb-4">Paket Software Custom</h3>
+                        <div class="text-3xl font-bold tracking-tight mb-4">Rp 25.000.000</div>
+                        <p class="text-[#555555] text-sm leading-relaxed">Sistem manajemen enterprise</p>
+                    </div>
+                    <a 
+                        href="https://wa.me/6282331565165?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Software%20Custom%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-full flex items-center justify-center gap-2 bg-black text-white py-3.5 font-medium hover:bg-[#222222] transition-colors mt-auto"
+                    >
+                        Pesan via WhatsApp
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Paket 4 -->
+                <div class="bg-white text-black p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 shadow-[0_10px_40px_rgba(255,255,255,0.05)]">
+                    <div class="mb-8 flex-grow">
+                        <h3 class="text-lg font-bold mb-4 border-b border-[#EEEEEE] pb-4">Paket Platform Digital</h3>
+                        <div class="text-3xl font-bold tracking-tight mb-4">Rp 12.000.000</div>
+                        <p class="text-[#555555] text-sm leading-relaxed">Portal web komersial & marketplace</p>
+                    </div>
+                    <a 
+                        href="https://wa.me/6282331565165?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Platform%20Digital%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="w-full flex items-center justify-center gap-2 bg-black text-white py-3.5 font-medium hover:bg-[#222222] transition-colors mt-auto"
+                    >
+                        Pesan via WhatsApp
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Portfolio Section -->
+    <section id="tentang" class="py-32 border-t border-[#1a1a1a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-20">
+                
+                <!-- About -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold tracking-tight mb-6">Tentang Kami</h2>
+                    <div class="w-16 h-px bg-white mb-8"></div>
+                    <p class="text-[#AAAAAA] leading-relaxed font-light mb-6">
+                        Didirikan pada Maret 2026 di Jepara, Jawa Tengah. PT ALTERN DIGITAL TECHNOLOGIES lahir dari visi untuk menghadirkan solusi teknologi enterprise-grade dengan pendekatan minimalis, arsitektur yang solid, dan performa maksimal.
+                    </p>
+                    <p class="text-[#AAAAAA] leading-relaxed font-light">
+                        Kami percaya bahwa kode yang baik adalah kode yang bersih, dan desain yang sempurna adalah ketika tidak ada lagi yang perlu dihilangkan.
+                    </p>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="lg:col-span-2" id="portofolio">
+                    <h2 class="text-3xl font-bold tracking-tight mb-6">Karya Terpilih</h2>
+                    <div class="w-16 h-px bg-white mb-8"></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="aspect-square bg-[#0A0A0A] border border-[#222222] hover:border-[#888888] transition-colors p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+                            <div class="text-[#444444] group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="monitor" class="w-10 h-10 mb-4"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-[#888888] group-hover:text-white transition-colors">Fintech Dashboard</h4>
+                        </div>
+                        <div class="aspect-square bg-[#0A0A0A] border border-[#222222] hover:border-[#888888] transition-colors p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+                            <div class="text-[#444444] group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="smartphone" class="w-10 h-10 mb-4"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-[#888888] group-hover:text-white transition-colors">E-Commerce App</h4>
+                        </div>
+                        <div class="aspect-square bg-[#0A0A0A] border border-[#222222] hover:border-[#888888] transition-colors p-6 flex flex-col items-center justify-center text-center group cursor-pointer">
+                            <div class="text-[#444444] group-hover:text-white transition-colors duration-300">
+                                <i data-lucide="server" class="w-10 h-10 mb-4"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-[#888888] group-hover:text-white transition-colors">ERP System</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="py-20 border-t border-[#222222] bg-black text-[#888888]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-12">
+            
+            <div class="max-w-sm">
+                <h3 class="text-white text-xl font-bold tracking-tight mb-2">PT ALTERN DIGITAL TECHNOLOGIES</h3>
+                <p class="text-sm mb-6 font-light">IT Consulting Firm & Software Agency</p>
+                <p class="text-sm leading-relaxed font-light">
+                    Jl. Beringin Raya, Dermolo RT 001 RW 002,<br />
+                    Kembang, Jepara, Jawa Tengah 59453<br />
+                    Indonesia
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-4 text-sm font-light">
+                <a href="mailto:alterndigitaltechnologies5@gmail.com" class="hover:text-white transition-colors flex items-center gap-3">
+                    <span class="w-5 h-5 border border-[#444444] flex items-center justify-center rounded-sm">@</span>
+                    alterndigitaltechnologies5@gmail.com
+                </a>
+                <a href="tel:+6282331565165" class="hover:text-white transition-colors flex items-center gap-3">
+                    <i data-lucide="smartphone" class="w-5 h-5"></i>
+                    +62 823 3156 5165
+                </a>
+            </div>
+
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-[#111111] flex flex-col md:flex-row justify-between items-center text-xs font-light">
+            <p>&copy; 2026 PT ALTERN DIGITAL TECHNOLOGIES. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a 
+        href="https://wa.me/6282331565165?text=Halo%20PT%20ALTERN%20DIGITAL%20TECHNOLOGIES%2C%20saya%20ingin%20konsultasi."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fixed bottom-8 right-8 z-50 bg-[#111111] border border-[#444444] hover:border-white text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:bg-[#222222] transition-all duration-300 group"
+    >
+        <i data-lucide="message-circle" class="w-5 h-5 text-[#AAAAAA] group-hover:text-white transition-colors"></i>
+        <span class="font-medium text-sm">Chat WhatsApp</span>
+    </a>
+
+    <!-- Interactivity Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-black/90', 'backdrop-blur-md', 'border-b', 'border-[#222222]', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-6');
+                navbar.classList.remove('bg-black/90', 'backdrop-blur-md', 'border-b', 'border-[#222222]', 'py-4');
+            }
+        });
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        // Close mobile menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
